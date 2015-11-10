@@ -10,8 +10,10 @@ export CVSEDITOR="${EDITOR}"
 export SVN_EDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
 
+# Not register a duplicate path
+typeset -U path cdpath fpath manpath
+
 # Set PATH
-typeset -U path
 path=(/usr/local/bin(N-/) /usr/bin(N-/) /bin(N-/) /usr/sbin(N-/) /sbin(N-/))
 
 # pyenv Configuration
