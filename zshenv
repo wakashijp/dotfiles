@@ -21,3 +21,8 @@ if [ -d "${PYENV_ROOT}" ]; then
     eval "$(pyenv init -)"
 fi
 
+# HomeBrew: brew doctor warning measures
+if [ -f "/usr/local/bin/pyenv" ]; then
+    alias brew="env PATH=${PATH/\/Users\/m\/\.pyenv\/shims:/} brew"
+fi
+
