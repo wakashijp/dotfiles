@@ -17,7 +17,7 @@ path=(/usr/local/bin(N-/) /usr/bin(N-/) /bin(N-/) /usr/sbin(N-/) /sbin(N-/))
 # pyenv Configuration
 export PYENV_ROOT="${HOME}/.pyenv"
 if [ -d "${PYENV_ROOT}" ]; then
-    path=(${PYENV_ROOT}/bin $path)
+    export PATH=${PYENV_ROOT}/bin:$PATH
     eval "$(pyenv init -)"
 fi
 
