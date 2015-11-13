@@ -17,3 +17,10 @@ setopt inc_append_history
 setopt share_history
 setopt no_flow_control
 
+# Use history-search-end
+autoload -Uz history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
+
