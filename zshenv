@@ -16,9 +16,9 @@ typeset -U path cdpath fpath manpath
 # Set PATH
 path=(/usr/local/bin(N-/) /usr/bin(N-/) /bin(N-/) /usr/sbin(N-/) /sbin(N-/))
 
-# pyenv Configuration
-export PYENV_ROOT="${HOME}/.pyenv"
-if [ -d "${PYENV_ROOT}" ]; then
+# pyenv Configuration for mac
+if [ -d "${HOME}/.pyenv" ]; then
+    export PYENV_ROOT="${HOME}/.pyenv"
     export PATH=${PYENV_ROOT}/bin:$PATH
     eval "$(pyenv init -)"
 fi
