@@ -28,3 +28,9 @@ if [ -f "/usr/local/bin/pyenv" ]; then
     alias brew="env PATH=${PATH/\/Users\/m\/\.pyenv\/shims:/} brew"
 fi
 
+# Use gnu-sed settings
+## Add "gnubin" path
+path=(/usr/local/opt/gnu-sed/libexec/gnubin(N-/) $path)
+## Add "gnuman" path
+manpath=(/usr/local/opt/gnu-sed/libexec/gnuman(N-/) $manpath)
+
