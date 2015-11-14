@@ -1,0 +1,7 @@
+# Common aliases
+alias ls='ls -F --color=auto'       # Show Color
+alias ld='ls -ldF --color=auto'     # Show info about the directory
+alias lla='ls -lAhF --color=auto'   # Show hidden all files
+alias ll='ls -lhF --color=auto'     # Show long file information
+alias la='ls -AF --color=auto'      # Show hidden files
+
