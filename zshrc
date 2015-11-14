@@ -28,3 +28,17 @@ bindkey "^N" history-beginning-search-forward-end
 setopt no_beep
 setopt nolistbeep
 
+# Switch loading source files
+case ${OSTYPE} in
+    darwin*)
+        if [ -f "${HOME}/.zshrc.darwin" ]; then
+            source "${HOME}/.zshrc.darwin"
+        fi
+        ;;
+    linux*)
+        if [ -f "${HOME}/.zshrc.linux" ]; then
+            source "${HOME}/.zshrc.linux"
+        fi
+        ;;
+esac
+
