@@ -1,3 +1,11 @@
+# gnu-sed Configuration for mac
+if [ -f `which gsed` ]; then
+    # Add "gnubin" path
+    path=(/usr/local/opt/gnu-sed/libexec/gnubin(N-/) $path)
+    # Add "gnuman" path
+    manpath=(/usr/local/opt/gnu-sed/libexec/gnuman(N-/) $manpath)
+fi
+
 # pyenv Configuration for mac
 if [ -f "/usr/local/bin/pyenv" ]; then
     export PYENV_ROOT="${HOME}/.pyenv"
@@ -10,13 +18,5 @@ fi
 # HomeBrew: brew doctor warning measures
 if [ -f "/usr/local/bin/pyenv" ]; then
     alias brew="env PATH=${PATH/\/Users\/m\/.pyenv\/shims:/} brew"
-fi
-
-# gnu-sed Configuration for mac
-if [ -f `which gsed` ]; then
-    # Add "gnubin" path
-    path=(/usr/local/opt/gnu-sed/libexec/gnubin(N-/) $path)
-    # Add "gnuman" path
-    manpath=(/usr/local/opt/gnu-sed/libexec/gnuman(N-/) $manpath)
 fi
 
