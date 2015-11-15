@@ -14,8 +14,17 @@ export GIT_EDITOR="${EDITOR}"
 typeset -U path cdpath fpath manpath
 
 # Set PATH
-path=(/usr/local/bin(N-/) /usr/bin(N-/) /bin(N-/) /usr/sbin(N-/) /sbin(N-/))
+path=(/usr/local/bin(N-/) /usr/bin(N-/) /bin(N-/))
 
-# set MANPATH
+# Set SUDO_PATH
+typeset -xT SUDO_PATH sudo_path
+typeset -U sudo_path
+sudo_path=(/usr/local/sbin(N-/) /usr/sbin(N-/) /sbin(N-/))
+
+if [ $(id -u) -eq 0 ]; then
+    path=($sudo_path $path)
+fi
+
+# Set MANPATH
 manpath=(/usr/local/share/man(N-/) /usr/share/man(N-/))
 
