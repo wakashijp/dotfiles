@@ -20,3 +20,7 @@ if [ -f "/usr/local/bin/pyenv" ]; then
     alias brew="env PATH=${PATH/\/Users\/m\/.pyenv\/shims:/} brew"
 fi
 
+# ls color Configuration for mac
+if [ -f "${HOME}/.dircolors" ];then
+    eval `gdircolors -b ${HOME}/.dircolors`
+fi
