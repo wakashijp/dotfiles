@@ -34,6 +34,10 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
+# auto change directory
+#
+setopt auto_cd
+
 # No beep sound when complete list displayed
 #
 setopt no_beep
