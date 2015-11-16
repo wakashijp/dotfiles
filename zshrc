@@ -38,6 +38,10 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 #
 setopt auto_cd
 
+# auto directory pushd that you can get dirs list by cd -[tab]
+#
+setopt auto_pushd
+
 # No beep sound when complete list displayed
 #
 setopt no_beep
