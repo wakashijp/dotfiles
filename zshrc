@@ -71,7 +71,7 @@ setopt hist_ignore_dups     # ignore duplication command history list
 setopt hist_ignore_space    # ignore start space command history list
 setopt inc_append_history   # new history lines are added to command history list incrementally
 setopt share_history        # share command history data
-setopt no_flow_control
+setopt no_flow_control      # no flow control ^S/^Q
 
 # Switch loading source files
 case ${OSTYPE} in
