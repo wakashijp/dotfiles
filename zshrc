@@ -5,6 +5,22 @@
 #
 # Set prompt
 #
+
+#########################################################
+# vcs_info formats
+# man zshcontrib(1)
+#########################################################
+# %s バージョン管理システム名(git,svn,hg,...)
+# %b ブランチ情報
+# %i リビジョン番号またはリビジョンID
+# %r リポジトリ名
+# %R リポジトリのルートディレクトリのパス
+# %S リポジトリルートから見た今のディレクトリの相対パス
+# %a アクション名(mergeなど)actionformatsのみで指定可
+# %c stagedstr 文字列
+# %u unstagedstr 文字列
+# %m その他の情報
+
 autoload -Uz colors; colors
 autoload -Uz vcs_info
 setopt prompt_subst
