@@ -1,3 +1,9 @@
+## ls color configuration for linux
+#
+if [ -f "${HOME}/.dircolors" ]; then
+    eval `dircolors -b ${HOME}/.dircolors`
+fi
+
 ## completion list-colors configuration for linux
 #
 if [ -n "$LS_COLORS" ]; then
