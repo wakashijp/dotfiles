@@ -74,6 +74,12 @@ setopt inc_append_history   # new history lines are added to command history lis
 setopt share_history        # share command history data
 setopt no_flow_control      # no flow control ^S/^Q
 
+## Alias configuration
+#
+# expand aliases before completing
+#
+setopt complete_aliases # aliased ls needs if file/dir completions work
+
 # Switch loading source files
 case ${OSTYPE} in
     darwin*)
