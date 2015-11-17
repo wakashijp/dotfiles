@@ -111,7 +111,10 @@ alias gps='git push origin master'
 alias glg='git log'
 alias gdf='git diff'
 
-# Switch loading source files
+## Loading source files configuration
+#
+# Switch OSTYPE loading source file
+#
 case ${OSTYPE} in
     darwin*)
         if [ -f "${HOME}/.zshrc.darwin" ]; then
@@ -124,4 +127,10 @@ case ${OSTYPE} in
         fi
         ;;
 esac
+
+# Loading secret source file
+#
+if [ -f "${HOME}/.zshrc.secret" ]; then
+    source "${HOME}/.zshrc.secret"
+fi
 
