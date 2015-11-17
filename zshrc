@@ -94,6 +94,16 @@ compinit -u
 #
 setopt complete_aliases # aliased ls needs if file/dir completions work
 
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias du='du -h'
+alias df='df -h'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
 # Switch loading source files
 case ${OSTYPE} in
     darwin*)
