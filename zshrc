@@ -104,6 +104,13 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
+alias gst='git status'
+alias gcm='git commit -a'
+alias gpl='git pull'
+alias gps='git push origin master'
+alias glg='git log'
+alias gdf='git diff'
+
 # Switch loading source files
 case ${OSTYPE} in
     darwin*)
