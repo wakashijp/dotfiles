@@ -1,4 +1,5 @@
-# gnu-sed Configuration for mac
+## gnu-sed configuration for mac
+#
 if [ -f `which gsed` ]; then
     # Add "gnubin" path
     path=(/usr/local/opt/gnu-sed/libexec/gnubin(N-/) $path)
@@ -6,7 +7,8 @@ if [ -f `which gsed` ]; then
     manpath=(/usr/local/opt/gnu-sed/libexec/gnuman(N-/) $manpath)
 fi
 
-# pyenv Configuration for mac
+## pyenv configuration for mac
+#
 if [ -f "/usr/local/bin/pyenv" ]; then
     export PYENV_ROOT="${HOME}/.pyenv"
     if [ -d "${PYENV_ROOT}" ]; then
@@ -15,17 +17,20 @@ if [ -f "/usr/local/bin/pyenv" ]; then
     fi
 fi
 
-# HomeBrew: brew doctor warning measures
+## HomeBrew: brew doctor warning measures
+#
 if [ -f "/usr/local/bin/pyenv" ]; then
     alias brew="env PATH=${PATH/\/Users\/m\/.pyenv\/shims:/} brew"
 fi
 
-# ls color Configuration for mac
-if [ -f "${HOME}/.dircolors" ];then
+## ls color configuration for mac
+#
+if [ -f "${HOME}/.dircolors" ]; then
     eval `gdircolors -b ${HOME}/.dircolors`
 fi
 
-# completion list-colors configuration for mac
+## completion list-colors configuration for mac
+#
 if [ -n "${LS_COLORS}" ]; then
     zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 fi
