@@ -13,8 +13,8 @@ fi
 ## Alias configuration for linux
 #
 alias ls='ls -F --color=auto'       # Show Color
-alias ld='ls -ldF --color=auto'     # Show info about the directory
-alias lla='ls -lAhF --color=auto'   # Show hidden all files
-alias ll='ls -lhF --color=auto'     # Show long file information
-alias la='ls -AF --color=auto'      # Show hidden files
+alias ld='ls -Fld --color=auto'     # Show info about the directory
+alias lla='ls -FlAh --color=auto'   # Show hidden all files
+alias ll='ls -Flh --color=auto'     # Show long file information
+alias la='ls -FA --color=auto'      # Show hidden files
 

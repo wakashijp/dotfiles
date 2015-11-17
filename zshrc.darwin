@@ -39,9 +39,9 @@ fi
 #
 if [ -f `which gls` ]; then
     alias ls='gls -F --color=auto'          # Show Color
-    alias ld='gls -ldF --color=auto'        # Show info about the directory
-    alias lla='gls -lAhF --color=auto'      # Show hidden all files
-    alias ll='gls -lhF --color=auto'        # Show long file information
-    alias la='gls -AF --color=auto'         # Show hidden files
+    alias ld='gls -Fld --color=auto'        # Show info about the directory
+    alias lla='gls -FlAh --color=auto'      # Show hidden all files
+    alias ll='gls -Flh --color=auto'        # Show long file information
+    alias la='gls -FA --color=auto'         # Show hidden files
 fi
 
