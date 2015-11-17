@@ -18,3 +18,9 @@ set encoding=utf-8                                  " 標準の文字コード
 set fileencoding=utf-8                              " 保存するファイル
 set fileencodings=utf-8,iso-2022-jp,euc-jp,cp932    " 文字コード自動判別
 set fileformats=unix,dos,mac                        " 改行コード自動認識
+
+"" Keybind Configuration
+"
+nnoremap ; :
+
+
