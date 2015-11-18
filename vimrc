@@ -23,4 +23,12 @@ set fileformats=unix,dos,mac                        " 改行コード自動認�
 "
 nnoremap ; :
 
+"" ColorScheme Configuration
+"
+set t_Co=256
+"colorscheme molokai
+"let g:molokai_original=1
+"set background=dark
+"highlight Normal ctermbg=none
+colorscheme atom-dark-256
 
