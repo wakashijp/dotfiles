@@ -32,3 +32,21 @@ set t_Co=256
 "highlight Normal ctermbg=none
 colorscheme atom-dark-256
 
+"" View Configuration
+"
+syntax on                                                           " ハイライト表示
+set title                                                           " タイトル表示
+set number                                                          " 行番号表示
+set list                                                            " 改行 ( $ )やタブ( ^I )を可視化する
+set listchars=tab:>.,trail:_,eol:↲,extends:»,precedes:«,nbsp:%      " 制御文字を可視化する際の文字を指定する
+set wrap                                                            " ウインドウ幅で行を折り返す
+set smartindent                                                     " オートインデント
+set showmatch                                                       " 括弧入力時の対応する括弧を表示
+set showmode                                                        " 現在のモードを表示する
+set cursorline                                                      " 現在の行をハイライト表示
+hi clear CursorLine                                                 " 現在の行の行番号のみハイライト表示
+
+" 現在の行の行番号のみをハイライト表示
+hi CursorLineNr term=bold cterm=none ctermfg=13 ctermbg=none
+
+
