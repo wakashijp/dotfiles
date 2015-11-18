@@ -49,4 +49,11 @@ hi clear CursorLine                                                 " 現在の�
 " 現在の行の行番号のみをハイライト表示
 hi CursorLineNr term=bold cterm=none ctermfg=13 ctermbg=none
 
+" Search Configuration
+set ignorecase              " 大文字/小文字の区別なく検索する
+set hlsearch                " 検索語にマッチした単語をハイライトする
+set incsearch               " インクリメンタルサーチ( 検索語を入れている途中から臨時マッチする文字列の検索を開始 )
+set smartcase               " 検索文字列に大文字が含まれている場合は区別して検索する
+set wrapscan                " 検索時に最後まで行ったら最初に戻る
+
 
