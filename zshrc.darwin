@@ -35,7 +35,14 @@ if [ -n "${LS_COLORS}" ]; then
     zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 fi
 
-# Alias configuraion
+## source-highlight configuration
+#
+if [ -f `which source-highlight` ]; then
+    export LESS='-R'
+    export LESSOPEN='| /usr/local/bin/src-hilite-lesspipe.sh %s'
+fi
+
+## Alias configuraion
 #
 if [ -f `which gls` ]; then
     alias ls='gls -F --color=auto'          # Show Color
