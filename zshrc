@@ -98,6 +98,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias sudo='sudo ' # alias use sudo command
+
 alias du='du -h'
 alias df='df -h'
 alias grep='grep --color=auto'
