@@ -25,6 +25,8 @@ autoload -Uz colors; colors
 autoload -Uz vcs_info
 setopt prompt_subst
 
+PROMPT="%{[38;5;118m%}%n@%m%{${reset_color}%}%# "
+
 RPROMPT="%{[38;5;012m%}[%~]%{${reset_color}%}"
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagestr "%F{yellow}!"
