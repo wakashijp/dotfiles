@@ -45,10 +45,10 @@ fi
 ## Alias configuraion
 #
 if [ -f `which gls` ]; then
-    alias ls='gls -F --color=auto'          # Show Color
-    alias ld='gls -Fld --color=auto'        # Show info about the directory
-    alias lla='gls -FlAh --color=auto'      # Show hidden all files
-    alias ll='gls -Flh --color=auto'        # Show long file information
-    alias la='gls -FA --color=auto'         # Show hidden files
+    alias ls='gls --color=auto'          # Show Color
+    alias ld='gls -ld --color=auto'      # Show info about the directory
+    alias lla='gls -lAh --color=auto'    # Show hidden all files
+    alias ll='gls -lh --color=auto'      # Show long file information
+    alias la='gls -A --color=auto'       # Show hidden files
 fi
 
