@@ -62,49 +62,49 @@ set wrapscan                " 検索時に最後まで行ったら最初に戻�
 " cd ~/.vim/bundle
 " git clone https://github.com/Shougo/neobundle.vim.git
 "
-if isdirectory( expand("~/.vim/bundle/neobundle.vim") )
+"if isdirectory( expand("~/.vim/bundle/neobundle.vim") )
+"
+"    " Note: Skip initialization for vim-tiny or vim-small.
+"    if !1 | finish | endif
+"
+"    if has('vim_starting')
+"        if &compatible
+"            set nocompatible			" Be iMpoved
+"        endif
+"
+"        " Required:
+"        set runtimepath+=~/.vim/bundle/neobundle.vim/
+"    endif
+"
+"    " Required:
+"    call neobundle#begin(expand('~/.vim/bundle/'))
+"
+"    " Let NeoBundle manager NeoBundle
+"    " Required:
+"    NeoBundleFetch 'Shougo/neobundle.vim'
+"
+"    " My Bundles here:
+"    " Refer to |:NeoBundle-examples|.
+"    " Note: You don't set neobundle setting in .gmimrc!
+"    NeoBundle 'altercation/vim-colors-solarized'
+"    NeoBundle 'tomasr/molokai'
+"    NeoBundle 'Shougo/unite.vim'
+"    NeoBundle 'itchyny/lightline.vim'
+"    NeoBundle 'nvie/vim-flake8'
+"
+"    call neobundle#end()
+"
+"    " Required:
+"    filetype off
+"    filetype plugin indent on
+"    filetype indent on
 
-    " Note: Skip initialization for vim-tiny or vim-small.
-    if !1 | finish | endif
-
-    if has('vim_starting')
-        if &compatible
-            set nocompatible			" Be iMpoved
-        endif
-
-        " Required:
-        set runtimepath+=~/.vim/bundle/neobundle.vim/
-    endif
-
-    " Required:
-    call neobundle#begin(expand('~/.vim/bundle/'))
-
-    " Let NeoBundle manager NeoBundle
-    " Required:
-    NeoBundleFetch 'Shougo/neobundle.vim'
-
-    " My Bundles here:
-    " Refer to |:NeoBundle-examples|.
-    " Note: You don't set neobundle setting in .gmimrc!
-    NeoBundle 'altercation/vim-colors-solarized'
-    NeoBundle 'tomasr/molokai'
-    NeoBundle 'Shougo/unite.vim'
-    NeoBundle 'itchyny/lightline.vim'
-    NeoBundle 'nvie/vim-flake8'
-
-    call neobundle#end()
-
-    " Required:
-    filetype off
-    filetype plugin indent on
-    filetype indent on
-
-    " set lightline
-    set laststatus=2
-
-    " If there are uninstalled bundles found on startup.
-    " this will coveniently prompt you to install them.
-    NeoBundleCheck
-
-endif
+"    " set lightline
+"    set laststatus=2
+"
+"    " If there are uninstalled bundles found on startup.
+"    " this will coveniently prompt you to install them.
+"    NeoBundleCheck
+"
+"endif
 
