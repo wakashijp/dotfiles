@@ -1,0 +1,14 @@
+[core]
+	excludesfile = ~/.gitignore
+
+[user]
+	name = Kenichi Matsubara
+	email = wakashijp@gmail.com
+
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+	interactive = auto
+	grep = auto
+
