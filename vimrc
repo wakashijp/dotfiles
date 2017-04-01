@@ -57,6 +57,43 @@ set incsearch               " インクリメンタルサーチ( 検索語を入
 set smartcase               " 検索文字列に大文字が含まれている場合は区別して検索する
 set wrapscan                " 検索時に最後まで行ったら最初に戻る
 
+"" dein.vim Install Configuration
+
+" dein path setting
+let s:dein_dir = fnamemodify('~/.vim/dein/', ':p')
+let s:dein_repo_dir = s:dein_dir . 'repos/github.com/Shougo/dein.vim'
+
+" dein.vim check and install
+if !isdirectory(s:dein_repo_dir)
+    execute '!git clone https://github.com/Shougo/dein.vim' shellescape(s:dein_repo_dir)
+endif
+
+" add dein.vim in runtimepath
+if &runtimepath !~# 'dein.vim'
+    execute 'set runtimepath^=' . s:dein_repo_dir
+endif
+
+call dein#begin(s:dein_dir)
+call dein#add('Shougo/neocomplcache')
+
+" plugins
+call dein#add('Shougo/unite.vim')
+call dein#add('itchyny/lightline.vim')
+call dein#add('vim-flake8')
+
+call dein#end()
+filetype plugin indent on
+syntax enable
+
+" set lightline
+set laststatus=2
+
+" install plugins
+if dein#check_install()
+	call dein#install()
+endif
+
+
 "" NeoBundle Install Configuration
 " mkdir -p ~/.vim/bundle
 " cd ~/.vim/bundle
@@ -98,7 +135,7 @@ set wrapscan                " 検索時に最後まで行ったら最初に戻�
 "    filetype off
 "    filetype plugin indent on
 "    filetype indent on
-
+"
 "    " set lightline
 "    set laststatus=2
 "
