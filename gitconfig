@@ -1,14 +1,22 @@
 [core]
-	excludesfile = ~/.gitignore
+    excludesfile = ~/.gitignore
 
 [user]
-	name = Kenichi Matsubara
-	email = wakashijp@gmail.com
+    name = Kenichi Matsubara
+    email = wakashijp@gmail.com
 
 [color]
-	status = auto
-	diff = auto
-	branch = auto
-	interactive = auto
-	grep = auto
+    status = auto
+    diff = auto
+    branch = auto
+    interactive = auto
+    grep = auto
 
+[alias]
+    st = status
+    cl = clone
+    cm = commit -a
+    ps = push origin master
+    pl = pull
+    lg = log
+    df = diff
