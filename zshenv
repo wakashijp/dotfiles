@@ -13,6 +13,9 @@ export CVSEDITOR="${EDITOR}"
 export SVN_EDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
 
+# Set VISUAL
+export VISUAL='vim'
+
 # Not register a duplicate path
 #
 typeset -U path cdpath fpath manpath
