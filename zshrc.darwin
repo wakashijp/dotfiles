@@ -17,6 +17,12 @@ if [ -f "/usr/local/bin/pyenv" ]; then
     fi
 fi
 
+## pyenv-virtualenv configuration for mac
+#
+if [ -f "/usr/local/bin/pyenv-virtualenv-init" ]; then
+    eval "$(pyenv virtualenv-init -)"
+fi
+
 ## HomeBrew: brew doctor warning measures
 #
 if [ -f "/usr/local/bin/pyenv" ]; then
