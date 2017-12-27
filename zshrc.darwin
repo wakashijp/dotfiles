@@ -23,6 +23,12 @@ if [ -f "/usr/local/bin/pyenv-virtualenv-init" ]; then
     eval "$(pyenv virtualenv-init -)"
 fi
 
+## anaconda3 configuration for mac
+#
+if [ -d "${HOME}/anaconda3/bin" ]; then
+    export PATH=${HOME}/anaconda3/bin:$PATH
+fi
+
 ## HomeBrew: brew doctor warning measures
 #
 if [ -f "/usr/local/bin/pyenv" ]; then
