@@ -80,7 +80,7 @@ call dein#add('Shougo/neocomplcache')
 " plugins
 call dein#add('Shougo/unite.vim')
 call dein#add('itchyny/lightline.vim')
-call dein#add('vim-flake8')
+call dein#add('nvie/vim-flake8')
 
 call dein#end()
 filetype plugin indent on
