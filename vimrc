@@ -1,6 +1,6 @@
 "" System Environment Configuration
 "
-set nocompatible
+"set nocompatible
 set noswapfile                      " swp の作成無効化
 set nobackup                        " ~ file の作成無効化
 set writebackup                     " 上書き作成時に~ file を削除
