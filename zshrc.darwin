@@ -66,8 +66,9 @@ fi
 
 ## zsh-completions configuration
 #
-fpath=(/usr/local/share/zsh-completions $fpath)
+if [ -d "/usr/local/share/zsh-completions" ]; then
+    fpath=(/usr/local/share/zsh-completions $fpath)
 
-autoload -Uz compinit
-compinit -u
-
+    autoload -Uz compinit
+    compinit -u
+fi
