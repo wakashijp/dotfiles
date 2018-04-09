@@ -64,3 +64,10 @@ if [ -f `which gls` ]; then
     alias la='gls -A --color=auto'       # Show hidden files
 fi
 
+## zsh-completions configuration
+#
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+autoload -Uz compinit
+compinit -u
+
