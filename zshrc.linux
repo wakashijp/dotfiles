@@ -19,7 +19,7 @@ if [ -f "/etc/lsb-release" ]; then
         autoload -Uz compinit
         compinit -u
     fi
-else if [ -f "/etc/centos-release" ];
+elif [ -f "/etc/centos-release" ]; then
     autoload -Uz compinit
     compinit -u
 fi
