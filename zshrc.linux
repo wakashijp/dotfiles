@@ -10,6 +10,20 @@ if [ -n "$LS_COLORS" ]; then
     zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 fi
 
+## zsh-completions configuration
+#
+if [ -f "/etc/lsb-release" ]; then
+    if [ -d "/usr/share/zsh/site-functions" ]; then
+        fpath=(/usr/share/zsh/site-functions $fpath)
+
+        autoload -Uz compinit
+        compinit -u
+    fi
+else if [ -f "/etc/centos-release" ];
+    autoload -Uz compinit
+    compinit -u
+fi
+
 ## Alias configuration for linux
 #
 alias ls='ls --color=auto'         # Show Color
