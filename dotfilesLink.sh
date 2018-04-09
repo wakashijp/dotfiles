@@ -13,7 +13,6 @@ case ${OSTYPE} in
         ln -sf /Users/m/dotfiles/zshrc.darwin ~/.zshrc.darwin
         ;;
     linux*)
-        ln -sf /home/m/dotfiles/dircolors ~/.dircolors
         ln -sf /home/m/dotfiles/editorconfig ~/.editorconfig
         ln -sf /home/m/dotfiles/gitconfig ~/.gitconfig
         ln -sf /home/m/dotfiles/gitignore ~/.gitignore
