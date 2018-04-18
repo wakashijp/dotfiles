@@ -17,6 +17,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Secret source file
+if [ -f ~/.bashrc.secret ]; then
+    . ~/.bashrc.secret
+fi
+
 # sudo completion setting.
 complete -cf sudo
 
