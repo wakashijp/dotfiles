@@ -25,9 +25,20 @@ autoload -Uz colors; colors
 autoload -Uz vcs_info
 setopt prompt_subst
 
-PROMPT="%{[38;5;118m%}%n@%m%{${reset_color}%}%# "
+case ${TERM} in
+    linux)
+        PROMPT="%{$fg[green]%}%n@%m%{$reset_color%}%# "
+        RPROMPT="%{$fg[blue]%}[%~]%{$reset_color%}"
+        ;;
+    xterm)
+        PROMPT="%{[38;5;118m%}%n@%m%{${reset_color}%}%# "
+        RPROMPT="%{[38;5;012m%}[%~]%{${reset_color}%}"
+        ;;
+esac
 
-RPROMPT="%{[38;5;012m%}[%~]%{${reset_color}%}"
+#PROMPT="%{[38;5;118m%}%n@%m%{${reset_color}%}%# "
+
+#RPROMPT="%{[38;5;012m%}[%~]%{${reset_color}%}"
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagestr "%F{yellow}!"
 zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
