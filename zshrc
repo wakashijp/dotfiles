@@ -28,7 +28,7 @@ setopt prompt_subst
 case ${TERM} in
     linux)
         PROMPT="%{$fg[green]%}%n@%m%{$reset_color%}%# "
-        RPROMPT="%{$fg[blue]%}[%~]%{$reset_color%}"
+        RPROMPT="%{$fg[cyan]%}[%~]%{$reset_color%}"
         ;;
     xterm)
         PROMPT="%{[38;5;118m%}%n@%m%{${reset_color}%}%# "
