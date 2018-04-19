@@ -30,7 +30,7 @@ case ${TERM} in
         PROMPT="%{$fg[green]%}%n@%m%{$reset_color%}%# "
         RPROMPT="%{$fg[cyan]%}[%~]%{$reset_color%}"
         ;;
-    xterm)
+    xterm*)
         PROMPT="%{[38;5;118m%}%n@%m%{${reset_color}%}%# "
         RPROMPT="%{[38;5;012m%}[%~]%{${reset_color}%}"
         ;;
